@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(192, 196, 169);
+  margin: 0px;
+  padding-top: 0px;
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  border-bottom: 2px solid rgb(135, 135, 135);
+  background-color: rgb(255, 255, 255);
+}
+.container h1{
+  margin-left: 40%;
+}
+.container img{
+  width: 10vh;
+ }
+.container .linktxt{
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.home{
+  padding: 1px 20px;
+  display: flex;
+}
+.workouts{
+  width: 80%;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.workout-details{
+  width: 40%; 
+  height: auto;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  margin: 2px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 700px) {
+  .workout-details{
+    width: 80%; 
+    box-sizing: border-box;
+  
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: 2px;
+    border-radius: 12px;
+  }
+}
+.workout-details h2{
+  color: #7bc16d;
+
+}
+.workout-form{
+  padding: 5vh;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 20%;
+  height: 10%;
+  margin-top: 1px;
+}
+.workout-form form{
+  width: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.077);
+  font-family: 'poppins';
+  border-radius: 13px;
+  padding: 10px 20px;
+  background-color: #c5dbc25d;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+
+.error{
+  background-color: rgb(229, 116, 116);
+  margin-top: 10x;
+  padding: 2px 2px;
+}
+
+.workout-form label{
+  font-family: 'poppins';
+
+}
+
+.workout-form input{
+  border: none;
+  padding: 3px;
+  border-radius: 6px;
+}
+.workout-form button{
+  cursor: pointer;
+  font-family: 'poppins';
+  border: none;
+  margin-top: 7px;
+  padding: 4px;
+  width: 40%;
+  border-radius: 3px ;
+  border-radius: 15px;
+  background-color: #7bc16d;
+}
+.workout-form button:hover{
+  color: #7bc16d;;
+  background-color: black;
+}
+.workout-details button{
+  cursor: pointer;
+  padding: 6px 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(216, 35, 35, 0.664);
+}
+.workout-details button:hover{
+color: rgba(246, 12, 12, 0.664);
+background-color: rgb(50, 50, 50);
+}
+.workout-details .date{
+  font-size: 0.8rem;
+}
